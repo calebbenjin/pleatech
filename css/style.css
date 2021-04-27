@@ -36,6 +36,10 @@ select {
   display: none;
 }
 
+img {
+  width: 100%;
+}
+
 main {
   scroll-snap-type: y mandatory;
 }
@@ -452,6 +456,8 @@ nav #close-btn {
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
+  top: 0;
+  left: 0;
 }
 
 .title {
@@ -488,7 +494,7 @@ nav #close-btn {
 
 .showcase .text-content .sub_title {
   font-weight: var(--bold);
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   color: #333;
 }
 
@@ -520,10 +526,11 @@ nav #close-btn {
 @media only screen and (max-width: 768px)  {
   .showcase {
     height: 100vh;
-    background-image: linear-gradient(to right, #c7c7c7af, #e9ebf34f, #285685a1), url(/img/hero.jpg);
+    background-image: linear-gradient(to right, #7a98a3af, #e9ebf34f, #285685a1), url(/img/hero.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
+    background-attachment: fixed;
   }
 
   .title {
