@@ -50,6 +50,7 @@ body {
   color: #222;
   font-size: 1rem;
   line-height: 1.4;
+  font-weight: var(--normarl);
   height: 100vh;
   background:#fdfdfd;
   font-family: var(--ff-primary);
@@ -201,13 +202,6 @@ img {
   color: #fff;
 }
 
-.title {
-  font-weight: var(--bold);
-  font-size: var(--largeFont);
-  color: var(--secondaryColor);
-  font-family: var(--ff-secondary);
-  /* margin-top: -0.3rem; */
-}
 .sub-title {
   font-weight: var(--bold);
   font-size: 1.5rem;
@@ -222,19 +216,12 @@ img {
   color: var(--secondaryColor);
 }
 
-@media only screen and (max-width: 560px)  {
- 
-  .sub-title {
-    font-weight: var(--bold);
-    font-size: 1rem;
-    color: var(--primaryColor);
-  }
-
-
-  .section-title h5 {
-    font-size: 0.9rem;
+@media only screen and (max-width: 768px)  {
+  .section__title {
+    font-size: 2.5rem;
   }
 }
+
 
 .core-btn {
   background: var(--primaryColor);
@@ -278,7 +265,6 @@ img {
 /* Header & Nav Section 
 ======================================*/
 header {
-  padding: 15px 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -292,12 +278,16 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.3rem auto;
+  /* margin: 0.3rem auto; */
+}
+
+header .main-header {
+  padding: 19px 0;
 }
 
 
 header .logo {
-  width: 150px;
+  width: 100px;
 }
 
 header ul li {
@@ -311,7 +301,7 @@ header ul {
 header ul li a {
   color: #333;
   text-decoration: none;
-  /* font-weight: var(--bold); */
+  font-weight: 600;
   font-size: 1rem
 }
 
@@ -332,43 +322,60 @@ nav #close-btn {
   display: none;
 }
 
-nav .hover-dropdown {
-  position: relative;
-}
-
-.dropdown-card {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  /* margin-top: 1rem; */
-  left: 0;
+.top-header {
   background: var(--secondaryColor);
-  padding: 20px;
-  white-space: nowrap;
-  display: none;
+  color: #fff;
+  padding: 8px 0;
+  font-weight: 600;
+}
+.top-header .container {
+  /* flex-wrap: wrap; */
+  text-align: center;
+  align-items: center;
+}
+.top-header span {
+  font-weight: var(--bold);
+  color: var(--primaryColor);
+}
+.top-header .info {
+  display: flex;
+  /* flex-wrap: wrap; */
+  text-align: center;
 }
 
-.hover-dropdown .dropdown-card a {
-  display: block;
-  margin: 1rem 0;
+.top-header .socail-icons {
+  margin-left: 1rem;
+  display: flex;
 }
-
-.hover-dropdown:hover > .dropdown-card, .dropdown-card:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.hover-dropdown .dropdown-card a {
-  font-size: 0.9rem;
+.top-header .socail-icons .icon{
+  color: var(--primaryColor);
+  margin-left: 1rem;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: var(--radius);
+  font-weight: var(--bold);
 }
 
 @media only screen and (max-width: 768px) {
+  .top-header .container {
+    padding: 6px 0;
+  }
+  .top-header p {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .top-header .socail-icons{
+    display: none;
+  }
   header {
-    padding: 3px 0;
-    /* background: var(--secondaryColor); */
-    background: transparent;
+    background: #fff;
+  }
+  header .main-header {
+    padding: 5px 0;
   }
   header .bugger {
     display: block;
@@ -406,7 +413,6 @@ nav .hover-dropdown {
   header ul li a {
     color: #fff;
     font-size: 1.5rem;
-
   }
 
   nav #close-btn {
@@ -442,31 +448,31 @@ nav .hover-dropdown {
   background: var(--whiteColor);
   display: flex;
   justify-content: space-between;
+  background-image: linear-gradient(to right, #ffffff, #e9ebf34f, #101922a1), url(/img/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.showcase .text-content {
-  width: 50%;
+.title {
+  font-weight: var(--bold);
+  color: var(--secondaryColor);
+  font-size: 4rem;
+}
+
+.showcase .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 4rem;
-  font-size: var(--smallFont);
-  /* color: #fff; */
+  justify-content: start;
 }
 
-.showcase .showcase-img {
-  width: 50%;
-  position: relative;
-  background: #fff;
-  /* background-image: linear-gradient(to bottom, #00000050,  #10192223, #10192223); */
-  /* border-top-left-radius: 6rem;
-  border-bottom-left-radius: 20rem; */
+.showcase .container .text-content {
+  width: 55%;
+}
+.showcase .container .text-content span {
+  color: var(--primaryColor);
 }
 
-.showcase .showcase-img img {
-  width: 100%;
-  /* height: 40%; */
-}
 
 .icon-btn {
   color: var(--primaryColor);
@@ -480,8 +486,14 @@ nav .hover-dropdown {
   font-weight: 900;
 }
 
-.showcase .text-content p {
-  font-weight: 900;
+.showcase .text-content .sub_title {
+  font-weight: var(--bold);
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.showcase .text-content .core-btn {
+  padding: 15px 3rem;
 }
 
 .icon-btn ion-icon {
@@ -503,25 +515,28 @@ nav .hover-dropdown {
   .showcase {
     height: 100%;
   }
-
-  .showcase .text-content {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 3rem;
-    font-size: var(--smallFont);
-  }
 }
 
 @media only screen and (max-width: 768px)  {
-  .showcase-home {
-    height: 80vh;
-    /* background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/home.png); */
-    background-position: top;
+  .showcase {
+    height: 100vh;
+    background-image: linear-gradient(to right, #c7c7c7af, #e9ebf34f, #285685a1), url(/img/hero.jpg);
+    background-position: center;
     background-size: cover;
     color: #fff;
   }
+
+  .title {
+    font-weight: var(--bold);
+    color: var(--secondaryColor);
+    font-size: 2.5rem;
+  }
+
+  .showcase .container .text-content {
+    width: 100%;
+    text-align: center;
+  }
+
   .showcase-service {
     height: 80vh;
     background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/service.png);
@@ -544,18 +559,10 @@ nav .hover-dropdown {
     color: #fff;
   }
 
-  .showcase .title {
+  .showcase .text-content .sub_title {
     color: #fff;
   }
 
-  .showcase .text-content {
-    padding: 0 2rem;
-    width: 100%;
-  }
-
-  .showcase .showcase-img {
-    display: none;
-  }
 
   .icon-btn {
     color: var(--primaryColor);
@@ -574,9 +581,6 @@ nav .hover-dropdown {
 @media only screen and (max-width: 576px)  {
   .showcase {
     padding-top: 1.8rem;
-  }
-  .showcase .showcase-img {
-    width: 40%;
   }
  
 }
