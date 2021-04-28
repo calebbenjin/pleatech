@@ -519,7 +519,7 @@ nav #close-btn {
     background-position: center;
     background-size: cover;
     color: #fff;
-    background-attachment: scroll, fixed;
+    background-attachment: local;
   }
 
 
