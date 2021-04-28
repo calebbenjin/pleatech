@@ -600,6 +600,19 @@ nav #close-btn {
     background-attachment: local;
   }
 
+  .showcase-about {
+    height: 40vh;
+    background-attachment: local;
+  }
+  .showcase-contact {
+    height: 40vh;
+    background-attachment: local;
+  }
+  .showcase-service {
+    height: 40vh;
+    background-attachment: local;
+  }
+
 
   .title {
     font-weight: var(--bold);
