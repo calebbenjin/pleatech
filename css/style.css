@@ -612,26 +612,6 @@ nav #close-btn {
     text-align: center;
   }
 
-  .showcase-service {
-    height: 80vh;
-    background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/service.png);
-    background-position: top;
-    background-size: cover;
-    color: #fff;
-  }
- 
-  .showcase-contact {
-    height: 80vh;
-    background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/contact.png);
-    background-position: top;
-    background-size: cover;
-    color: #fff;
-  }
-
-  .showcase .text-content .sub_title {
-    color: #fff;
-  }
-
 
   .icon-btn {
     color: var(--primaryColor);
