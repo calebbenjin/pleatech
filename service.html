@@ -18,6 +18,7 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
 />
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CZ8H8MFJF"></script>
@@ -35,11 +36,14 @@
 
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> 
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="theme-color" content="#fafafa">
@@ -48,25 +52,38 @@
 
 <body>
   
+
+  
   <header >
-    <div class="container">
+    <div class="top-header" >
+      <div class="container">
+        <p><span><i class="fas fa-phone-alt"></i></span> +1 234 456 78910</p>
+        <div class="info">
+          <p><span><i class="fas fa-envelope"></i></span> pleatech@info.com</p>
+        </div>
+        <div class="socail-icons">
+          <a href="#" class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container main-header">
       <img src="img/logo.png" alt="" class="logo">
       <nav role="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="service.html">Services</a></li>
-          <li class="hover-dropdown">
-            <a href="#">Expertise <i class="fas fa-sort-down"></i></a>
-            <div class="dropdown-card">
-            <a href="product_dev.html">Product Development</a>
-            <a href="web_dev.html">Web Development</a>
-            <a href="mobile_dev.html">Mobile Development</a>
-            </div>
-          </li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="core-btn">Get in touch</a></li>
+          <li><a href="contact.html" class="core-btn">Get a Quote</a></li>
         </ul>
-        <ion-icon name="add-circle-outline" id="close-btn"></ion-icon>
+        <ion-icon name="add-outline" id="close-btn"></ion-icon>
       </nav>
       <div class="bugger" id="open-btn">
         <ion-icon name="menu-outline"></ion-icon>
@@ -75,25 +92,175 @@
   </header>
 
   <main>
-    <section class="showcase showcase-home" id="scroll-top">
-      <h1 class="section__title">Landing Showcase</h1>
+    <section class="showcase-service" id="scroll-top">
+      <div class="container">
+        <div class="text-content">
+          <h1 class="title">Our  <span>Services</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about_section">
+      <div class="container ">
+        <!-- <h2 class="section__title">About us</h2> -->
+        <div class="row">
+          <div class="col-md-6 mx-auto about-img">
+          </div>
+          <div class="col-md-6 mx-auto">
+            <div class="about_content">
+              <h6 class="welcome_title">Welcome to PleatechInternational</h6>
+              <h2 class="section__title">Quality and Affordable Constructor</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+              <h3 class="sub_title">We Can Help You</h3>
+
+              <div class="row">
+                <div class="col-md-12 col-lg-6 mx-auto">
+                  <div class="cardy d-flex">
+                    <i class="fas fa-truck-pickup"></i>
+                    <div>
+                      <h4>General Contracting</h4>
+                      <p>Far far away, behind the word mountains.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mx-auto">
+                  <div class="cardy d-flex">
+                    <i class="fas fa-truck-pickup"></i>
+                    <div>
+                      <h4>Consulting</h4>
+                      <p>Far far away, behind the word mountains.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mx-auto">
+                  <div class="cardy d-flex">
+                    <i class="fas fa-truck-pickup"></i>
+                    <div>
+                      <h4>Mechanical Engineering</h4>
+                      <p>Far far away, behind the word mountains.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mx-auto">
+                  <div class="cardy d-flex">
+                    <i class="fas fa-truck-pickup"></i>
+                    <div>
+                      <h4>Civil Engineering</h4>
+                      <p>Far far away, behind the word mountains.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ads-section after-bg">
+      <div class="container">
+        <div class="ads-text">
+          <h3>You may Contact us for construction & Renovation work</h3>
+          <h2 class="section__title">We Are Great Construction Company</h2>
+        </div>
+        <div>
+          <a href="#" class="ads-btn">Make an Oppointment</a>
+        </div>
+      </div>
     </section>
 
     <section class="section">
-      <h2 class="section__title">OUR SERVICES</h2>
-    </section>
+      <div class="container">
+        <h2 class="section__title">Some Feedback From Client</h2>
 
-    <section class="section">
-      <h2 class="section__title">OUR PROJECTS</h2>
-    </section>
-
-    <section class="section">
-      <h2 class="section__title">Some Feedback From Client</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="client_card">
+              <div class="card-head">
+                <div class="img">
+                  <img src="img/person_1.jpg" alt="Client Image">
+                  <i class="fas fa-quote"></i>
+                </div>
+                <div class="user-details">
+                  <h4>Roger Scott</h4>
+                  <h6>Marketing Manager</h6>
+                </div>
+              </div>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="client_card">
+              <div class="card-head">
+                <div class="img">
+                  <img src="img/person_3.jpg" alt="Client Image">
+                  <i class="fas fa-quote"></i>
+                </div>
+                <div class="user-details">
+                  <h4>Roger Scott</h4>
+                  <h6>Marketing Manager</h6>
+                </div>
+              </div>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="client_card">
+              <div class="card-head">
+                <div class="img">
+                  <img src="img/person_2.jpg" alt="Client Image">
+                  <i class="fas fa-quote"></i>
+                </div>
+                <div class="user-details">
+                  <h4>Roger Scott</h4>
+                  <h6>Marketing Manager</h6>
+                </div>
+              </div>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <div class="about-footer">
+              <img src="img/logo.png" alt="Logo" class="footer-logo">
+              <p>So seed seed green that winged cattle in Gahesd thing made fly you're no divided deep move lan Gathering thing us land years living on floor me the cavaty do buty fresh</p>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto">
+            <div class="footer-service">
+              <h3>Best Services</h3>
+              <ul>
+                <li>General Contracting</li>
+                <li>Mechanical Engineering</li>
+                <li>Civil Engineering</li>
+                <li>Bridge Construction</li>
+                <li>Electrical Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto">
+            <div class="footer-service">
+              <h3>Contact Info</h3>
+              <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p>
+              <p><span>Address :</span> Hath of it fly signs bear be one blessed after</p>
+              <p><span>Phone :</span> +2 36 265 (8060)</p>
+              <p><span>Email :</span> info@colorlib.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy; 2021 All rights reserved | This Website is made with 💖 by <a href="#">OliveGeeks</a></p>
+      </div>
     </footer>
+    
   </main>
   
 

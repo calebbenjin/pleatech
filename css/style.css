@@ -45,10 +45,10 @@ main {
 }
 
 .section {
-  height: 100vh;
-  scroll-snap-align: start;
-  padding: 6rem 0;
-  margin-bottom: 6rem;
+  /* height: 100%; */
+  /* scroll-snap-align: start; */
+  padding: 3rem 0;
+  margin: 2rem 0;
 }
 
 body {
@@ -150,8 +150,21 @@ ul li {
 }
 
 input {
-  outline: none;
-  font-weight: 600;
+  outline: none !important;
+  padding: 25px !important;
+  border-radius: none !important;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border: solid 1px #ccc;
+  padding: 20px;
+}
+
+form label {
+  font-weight: 900;
+  color: #6b6b6b;
 }
 
 
@@ -225,6 +238,7 @@ img {
   transition: var(--transition);
   border-radius: var(--radius);
   font-weight: 600;
+  border: transparent;
 }
 .core-btn:hover {
   background: var(--secondaryColor);
@@ -512,6 +526,70 @@ nav #close-btn {
   }
 }
 
+.showcase-about {
+  height: 60vh;
+  background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/bg_4.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  background-attachment: scroll, fixed;
+  top: 0;
+  left: 0;
+}
+
+.showcase-about .title {
+  color: #fff;
+}
+
+.title span {
+  color: var(--primaryColor);
+}
+
+.showcase-about .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.showcase-service {
+  height: 60vh;
+  background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/bg_2.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  background-attachment: scroll, fixed;
+  top: 0;
+  left: 0;
+}
+
+.showcase-service .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.showcase-contact {
+  height: 60vh;
+  background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/image_3.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  background-attachment: scroll, fixed;
+  top: 0;
+  left: 0;
+}
+
+.showcase-contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
 @media only screen and (max-width: 768px)  {
   .showcase {
     height: 100vh;
@@ -541,13 +619,7 @@ nav #close-btn {
     background-size: cover;
     color: #fff;
   }
-  .showcase-about {
-    height: 80vh;
-    background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/about.png);
-    background-position: top;
-    background-size: cover;
-    color: #fff;
-  }
+ 
   .showcase-contact {
     height: 80vh;
     background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/contact.png);
@@ -591,6 +663,10 @@ nav #close-btn {
   
 }
 
+.project-section {
+  margin-top: 6rem
+}
+
 
 /* ShowCase Section End.
 ======================================*/
@@ -604,8 +680,9 @@ nav #close-btn {
   background-image: url(/img/about.jpg);
   background-position: top;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
+
 .about_section .service-img {
   background-image: url(/img/services.jpg);
   background-position: top;
@@ -614,7 +691,8 @@ nav #close-btn {
 }
 
 .about_section .section__title {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+  margin-top: 0;
   color: var(--secondaryColor);
 }
 
@@ -680,7 +758,7 @@ nav #close-btn {
 }
 
 .ads-section {
-  margin-top: 15rem;
+  margin: 8rem 0;
   background-image: linear-gradient(to right, #ffffffc0, #5163aaa6, #305a832d), url(/img/bg_1.jpg);
   background-position: center;
   background-size: cover;
@@ -794,6 +872,166 @@ nav #close-btn {
   }
 }
 
+.project-card {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  transition: var(--transition);
+}
+
+.project-card .overlay h2 {
+  font-weight: 900;
+}
+
+.project-card .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 3, 61, 0.698);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transition: var(--transition);
+}
+
+.project-card:hover .overlay {
+  z-index: 1;
+}
+.project-card img{
+  object-fit: cover;
+  height: 100%;
+}
+
+
+.client_card {
+  padding: 2rem;
+  box-shadow: var(--light-shadow);
+  border-bottom: solid 10px var(--primaryColor);
+  border-radius: var(--radius);
+}
+.client_card .card-head{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.client_card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: solid 2px var(--primaryColor);
+}
+
+.client_card h4 {
+  color: var(--secondaryColor);
+  font-weight: 900;
+}
+
+.client_card h6 {
+  color: var(--primaryColor);
+}
+
+.client_card p {
+  font-weight: 600;
+  color: #a5a5a5;
+}
+
+form label {
+  color: var(--secondaryColor);
+}
+
+input, textarea {
+  background:rgba(17, 16, 16, 0.705) !important;
+}
+input:focus, textarea:focus {
+  background: #fff !important;
+  outline: none !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #ccc!important;
+}
+
+.form {
+  padding: 4rem;
+  background-image: linear-gradient(to bottom, #ffffff, #ffffffe5, #c4d6e9ec), url(/img/bg_1.jpg);
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    padding: 2rem;
+  }
+}
+
+
+.form h3 {
+  font-weight: 900;
+  color: var(--primaryColor);
+  margin-bottom: 2rem;
+}
+
+.form-content {
+  height: 100%;
+  /* padding: 5rem;
+  background-image: linear-gradient(to right, #fffffff5, #5163aaa6, #c4d6e9ec), url(/img/bg_1.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; */
+  overflow: hidden;
+}
+
+.form-section {
+  overflow: hidden;
+}
+
+footer {
+  background:#030022;
+  color: #a7a7a7;
+}
+
+footer .container {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-weight: 500;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+footer ul li:hover {
+  color: var(--primaryColor);
+}
+
+footer h3 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background: var(--secondaryColor);
+}
+
+.footer a {
+  color: var(--primaryColor);
+  font-weight: 900;
+}
 
 /* ==========================================================================
    Helper classes
