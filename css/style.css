@@ -8,7 +8,7 @@
 }
 
 :root {
-  --primaryColor: #FF6D00;
+  --primaryColor: #db6001;
   --primaryColor2: #FF9E1F;
   --secondaryColor: #041872;
   --asentColor: #2D080A;
@@ -25,6 +25,10 @@
   --radius: 3px;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+p b {
+  font-weight: 900;
 }
 
 html {
@@ -783,7 +787,7 @@ nav #close-btn {
 }
 
 .ads-section {
-  margin: 8rem 0;
+  margin-bottom: 4rem;
   background-image: linear-gradient(to right, #ffffffc0, #5163aaa6, #305a832d), url(/img/bg_1.jpg);
   background-position: center;
   background-size: cover;
@@ -1038,6 +1042,64 @@ input::placeholder, textarea::placeholder {
 .form-section {
   overflow: hidden;
 }
+
+.vision_section {
+  background: #fff;
+  padding-bottom: 10rem ;
+  padding-top: 5rem ;
+}
+
+.vision_section .section__title {
+  text-align: center;
+}
+
+.vision_section .card {
+  text-align: center;
+  padding: 2rem;
+  box-shadow: var(--light-shadow);
+  height: 250px;
+  border-bottom: 6px solid var(--primaryColor);
+}
+
+.mission_section {
+  background-image: linear-gradient(to bottom, #ffffffa2, #c4d6e9ec), url(/img/image_1.jpg);
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 10rem ;
+  padding-top: 5rem ;
+}
+
+.mission_section .section__title {
+  text-align: center;
+}
+
+.mission_section .card {
+  text-align: center;
+  padding: 2rem 1.2rem;
+  box-shadow: var(--light-shadow);
+  height: 350px;
+  border-bottom: 6px solid var(--primaryColor);
+  background: #fff;
+}
+
+.card i {
+  font-size: 4rem;
+  color: var(--primaryColor);
+  margin-bottom: 2rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.card h4 {
+  font-weight: 900;
+  color: var(--secondaryColor);
+  font-size: 1.1rem;
+}
+
 
 footer {
   background:#030022;
