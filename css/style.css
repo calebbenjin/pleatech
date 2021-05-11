@@ -485,7 +485,7 @@ nav #close-btn {
   background: var(--whiteColor);
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #ffffff, #e9ebf34f, #101922a1), url(/img/hero.jpg);
+  background-image: linear-gradient(to right, #ffffff, #e9ebf34f, #101922a1), url(/img/hero.jpeg);
   background-position: top;
   background-size: cover;
   background-attachment: scroll, fixed;
@@ -609,7 +609,7 @@ nav #close-btn {
 }
 .showcase-contact {
   height: 60vh;
-  background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/image_3.jpg);
+  background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/hero.jpeg);
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -706,14 +706,14 @@ nav #close-btn {
 }
 
 .about_section .about-img {
-  background-image: url(/img/about.jpg);
+  background-image: url(/img/abatimg.jpeg);
   background-position: top;
   background-size: cover;
   /* height: 100vh; */
 }
 
 .about_section .service-img {
-  background-image: url(/img/services.jpg);
+  background-image: url(/img/work22.jpeg);
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -788,7 +788,7 @@ nav #close-btn {
 
 .ads-section {
   margin-bottom: 4rem;
-  background-image: linear-gradient(to right, #ffffffc0, #5163aaa6, #305a832d), url(/img/bg_1.jpg);
+  background-image: linear-gradient(to right, #ffffffc0, #5163aaa6, #305a832d), url(/img/hero.jpeg);
   background-position: center;
   background-size: cover;
   color: #fff;
