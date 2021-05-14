@@ -629,7 +629,7 @@ nav #close-btn {
 @media only screen and (max-width: 768px)  {
   .showcase {
     height: 100vh;
-    background-image: linear-gradient(to right, #7a98a3af, #e9ebf34f, #285685a1), url(/img/hero.jpg);
+    background-image: linear-gradient(to right, #7a98a3af, #e9ebf34f, #285685a1), url(/img/hero.jpeg);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -858,7 +858,7 @@ nav #close-btn {
 
   .ads-section {
     margin-top: 1rem;
-    background-image: linear-gradient(to right, #ffffffc0, #5163aaa6, #305a832d), url(/img/bg_1.jpg);
+    background-image: linear-gradient(to right, #ffffffc0, #5163aaa6, #305a832d), url(/img/hero.jpeg);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -997,7 +997,7 @@ input::placeholder, textarea::placeholder {
 
 .form {
   padding: 4rem;
-  background-image: linear-gradient(to bottom, #ffffff, #ffffffe5, #c4d6e9ec), url(/img/bg_1.jpg);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffffe5, #c4d6e9ec), url(/img/image_1.jpg);
   background-position: left;
   background-size: cover;
   background-attachment: fixed;
@@ -1062,6 +1062,7 @@ input::placeholder, textarea::placeholder {
   box-shadow: var(--light-shadow);
   height: 250px;
   border-bottom: 6px solid var(--primaryColor);
+  margin-bottom: 2rem;
 }
 
 .mission_section {
@@ -1084,6 +1085,7 @@ input::placeholder, textarea::placeholder {
   height: 350px;
   border-bottom: 6px solid var(--primaryColor);
   background: #fff;
+  margin-top: 2rem;
 }
 
 .card i {
