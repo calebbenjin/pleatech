@@ -732,12 +732,15 @@ nav #close-btn {
 }
 
 .about_section .cardy {
-  padding: 20px;
+  padding: 20px 0;
+  width: 100%;
   background: #fff;
   box-shadow: var(--light-shadow);
   margin-top: 0.5rem;
   transition: var(--transition);
   cursor: pointer;
+  /* display: flex; */
+  /* flex-grow: grow; */
 }
 
 .about_section .cardy:hover {
